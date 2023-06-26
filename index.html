@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mySpacess</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="matrice"></canvas>
+
+<div id="myspacess">
+
+	<!--                  Clock                         -->			
+	<div class="clock">
+	  <div class="top"></div>
+	  <div class="right"></div>
+	  <div class="bottom"></div>
+	  <div class="left"></div>
+	  <div class="center"></div>
+	  <div class="hour"></div>
+	  <div class="minute"></div>
+	  <div class="second"></div>
+	</div>
+
+
+	
+
+		<div class="desk">
+			
+			<!--                    Table                           -->
+			
+			<div class="table">
+
+				<div class="right-tb">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				
+	
+
+				
+	
+				
+				<!--                    laptop                          -->
+				
+				<div class="laptop">
+
+					<!-- Note -->
+					<div class="notes">
+					<span class="note">Rise</span>
+					<span class="note">Strive</span>
+					<span class="note">Win</span>
+					<span class="note">repeat</span>
+					</div>
+					<div class="terminal"></div>
+					<div class="base"></div>
+
+				</div>
+
+				<!-- /*
+				
+					/*                    Screen                    -->
+				
+					<span class="long-screen">
+					<i></i>
+				</span>
+
+			</div>
+			
+			<!--                      Petit Zshmeta                      -->
+
+
+		
+				
+				
+
+
+			
+			<!--                      Chair                         -->
+			
+			<div class="chair">
+				<!-- <ul>
+
+				</ul> -->
+				<ul>
+				<li class="chair-leg"></li>
+				<li class="chair-base"></li>
+				</ul>
+			</div>
+
+			
+			<!--                      Trash                         -->
+			
+			<div class="trash"><i class="shadows"></i></div>
+		
+		</div>
+
+</div>
+
+<!-- source codepen https://codepen.io/overkill798/details/xxydQZg -->
+<!-- 	
+<script>const canvas = document.getElementById('Matrix');
+	const context = canvas.getContext('2d');
+	
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	const random = 'hduegygb7dg873h8h873783ge8g83e8g78387t832ye873ehsfgdgfjygfudgfyfgysdgfyusdgfudsgfudsygfudsgygfusdfgudsgfudsgfjdsgfjdsgyut4854754yrtg84343y8t348f43g83g4fg3g834g74238yefge7f34834t8348fg48748rg387t483487tr838tr8743t74rt763t4r73473yrgvfg474b8f7y438r874487gf83';
+	const arab = '  ج  د  ه  و  ز  ح  ط  ي  ك  ل  م  ن  س  ع  ف  ص  ق  ر  ش  ت  ث  خ  ذ  ض  ظ غ  ';
+	const numero = '0123456789';
+	const alphabet = arab + random + arab + numero + arab;
+	const fontSize = 22;
+	const columns = canvas.width/fontSize;
+	const rainDrops = [];
+	
+	for( let x = 0; x < columns; x++ ) {
+		rainDrops[x] = 1;
+	}
+	const draw = () => {
+		context.fillStyle = 'rgba(0, 0, 0, 0.05)';
+		context.fillRect(0, 0, canvas.width, canvas.height);
+	
+		context.fillStyle = '#0F0';
+		context.font = fontSize;
+	
+		for(let i = 0; i < rainDrops.length; i++)
+		{
+			const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+			context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+	
+			if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.979){
+				rainDrops[i] = 0;
+			}
+			rainDrops[i]++;
+		}
+	};
+	setInterval(draw, 30);</script> -->
+
+</body>
+</html>
