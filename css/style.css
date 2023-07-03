@@ -1,0 +1,778 @@
+
+/*                                                 */ 
+/*                      CSS Reset                  */
+/*                      source   ChatGPT                        */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+
+
+
+
+/*                     Animation                   */
+
+/* Slide Code (Black Screen) */
+@-webkit-keyframes slide {
+  from {
+    background-position: 0px 0px; }
+
+  to {
+    background-position: 0px 600px; } }
+
+/* Clock Animation */
+@keyframes time {
+  to {
+    transform: rotate(360deg); } }
+
+body {
+  background: #323232;
+  background-size: 25px 60px; }
+
+
+/*                      myspacess                  */
+
+#myspacess div {
+  position: absolute; }
+#myspacess:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(
+        to right,
+        #654321 0%,
+        #654321 5%,
+        #8B4513 5%,
+        #8B4513 10%,
+        #654321 10%,
+        #654321 15%,
+        #8B4513 15%,
+        #8B4513 20%,
+        #654321 20%,
+        #654321 25%,
+        #8B4513 25%,
+        #8B4513 30%,
+        #654321 30%,
+        #654321 35%,
+        #8B4513 35%,
+        #8B4513 40%,
+        #654321 40%,
+        #654321 45%,
+        #8B4513 45%,
+        #8B4513 50%,
+        #654321 50%,
+        #654321 55%,
+        #8B4513 55%,
+        #8B4513 60%,
+        #654321 60%,
+        #654321 65%,
+        #8B4513 65%,
+        #8B4513 70%,
+        #654321 70%,
+        #654321 75%,
+        #8B4513 75%,
+        #8B4513 80%,
+        #654321 80%,
+        #654321 85%,
+        #8B4513 85%,
+        #8B4513 90%,
+        #654321 90%,
+        #654321 95%,
+        #8B4513 95%,
+        #8B4513 100%
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+    background-blend-mode: overlay;
+  height: 68px;
+  border-top: 9px solid #323232; }
+#myspacess .desk {
+  width: 990px;
+  height: 100%;
+  margin: auto;
+  position: inherit; }
+
+
+
+/*               Clock animated By  Max            */
+/*          http://codepen.io/MyXoToD/pen/psLen    */
+
+.clock {
+  position: relative;
+  height: 123px;
+  width: 123px;
+  background: #b92b27;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  box-sizing: border-box;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 6px solid #090909;
+  position: absolute;
+  top: 30px;
+  left: 5%;
+  margin: auto; }
+  .clock .top {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: #262626;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  .clock .right {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: #262626;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0; }
+  .clock .bottom {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: #262626;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto; }
+  .clock .left {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: #262626;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0; }
+  .clock .center {
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #262626;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%; }
+  .clock .hour {
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-animation: time 86400s infinite linear;
+    -moz-animation: time 86400s infinite linear;
+    -o-animation: time 86400s infinite linear;
+    animation: time 86400s infinite linear; }
+    .clock .hour:before {
+      position: absolute;
+      content: "";
+      background: #262626;
+      height: 60px;
+      width: 3px;
+      top: 30px; }
+  .clock .minute {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-animation: time 3600s infinite linear;
+    -moz-animation: time 3600s infinite linear;
+    -o-animation: time 3600s infinite linear;
+    animation: time 3600s infinite linear; }
+    .clock .minute:before {
+      position: absolute;
+      content: "";
+      background: #262626;
+      height: 40px;
+      width: 1px;
+      top: 50px; }
+  .clock .second {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-animation: time 60s infinite linear;
+    -moz-animation: time 60s infinite linear;
+    -o-animation: time 60s infinite linear;
+    animation: time 60s infinite linear; }
+    .clock .second:before {
+      position: absolute;
+      content: "";
+      background: #fd1111;
+      height: 45px;
+      width: 2px;
+      top: 45px; }
+
+
+/* =============================================== /*
+/*                     Table                       */
+.table {
+  position: absolute;
+  bottom: 33px;
+  z-index: 1;
+  width: 898px;
+  height: 297px;
+  margin-left: 92px;
+  transition: margin-left 1s;
+}
+
+.table::after {
+  position: absolute;
+  content: '';
+  background: #ccbdac;
+  box-shadow: 0 1px 7px 0 #958a7e;
+  height: 21px;
+  width: 100%;
+}
+
+.table::before {
+  position: absolute;
+  content: '';
+  background: #e0ceb8;
+  height: 100%;
+  width: 31px;
+}
+
+.table .right-tb {
+  position: absolute;
+  right: 0;
+  width: 31px;
+  height: 274px;
+  padding: 23px 0 0 20px;
+  background: #e0ceb8;
+}
+
+.table .right-tb::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: -4px;
+  background: #CA98AB;
+  border-radius: 100%;
+  right: 1px;
+}
+
+.table .right-tb span::after {
+  content: '';
+  background: #323232;
+  position: absolute;
+  width: 69px;
+  height: 15px;
+  left: 73px;
+  top: 18px;
+}
+
+
+/* Screen Long */
+
+
+
+
+.long-screen {
+  position: absolute;
+  width: 180px;
+  height: 251px;
+  background: #343441;
+  border: 8px solid #525151;
+  right: 740px;
+  top: -306px;
+  background: url(../images/codes.jpg);
+  background-size: 100%;
+  -webkit-animation: slide 15s linear infinite;
+  -moz-animation: slide 15s linear infinite;
+  -o-animation: slide 15s linear infinite;
+  animation: slide 15s linear infinite; }
+
+  .long-screen:after {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 0;
+    bottom: -37px;
+    right: 70px;
+    border: 14px solid #090909;
+   }
+  .long-screen i {
+    position: absolute;
+    background: #626262;
+    width: 103px;
+    height: 9px;
+    bottom: -47px;
+    left: 39px; }
+
+
+/*                     Chair                       */
+
+.chair {
+  position: absolute;
+  width: 165px;
+  height: 436px;
+  bottom: 34px;
+  z-index: 2;
+  margin-left: 575px;
+  transition: margin-left 1s;
+}
+
+.chair::after,
+.chair ul {
+  position: absolute;
+  width: 165px;
+  background: #3a3a3a;
+  border-radius: 10px;
+}
+
+.chair::after {
+  height: 231px;
+}
+
+.chair::before {
+  content: '';
+  position: absolute;
+  background: #7d7d7d;
+  width: 140px;
+  height: 120px;
+  left: 16px;
+  top: 110px;
+border-radius: 15px 15px 5px 5px;
+}
+
+.chair ul {
+  height: 23px;
+  top: 240px;
+  border-radius: 0 0 15px 15px;
+}
+
+.chair ul::before {
+  content: '';
+  position: absolute;
+  background: #656565;
+  width: 141px;
+  height: 11px;
+  top: 23px;
+  left: 10px;
+}
+
+.chair ul::after {
+  content: '';
+  position: absolute;
+  background: #4b4b4b;
+  width: 37px;
+  height: 7px;
+  top: 34px;
+  left: 62px;
+}
+
+.chair-leg {
+  width: 18px;
+  height: 156px;
+  position: absolute;
+  left: 75px;
+  top: 41px;
+  perspective: 99px;
+}
+
+.chair-leg{
+  content: '';
+  position: absolute;
+  top: 34px;
+  width: 14px;
+  height: 130px;
+  background: #4b4b4b;
+  outline: 1px solid transparent;
+}
+.chair-leg:after{
+  content: '';
+  position: absolute;
+  left: -63px;
+  top: 130px;
+  width: 140px;
+  height: 15px;
+  background: #4b4b4b;
+  outline: 1px solid transparent;
+}
+
+
+
+
+/*                  Petit Zshmeta                */
+
+
+/* Little Men*/
+.petitzshmeta {
+  position: absolute;
+  height: 60px;
+  top: 180px;
+  margin-left: 950px; ;
+  width: 70px;
+  background-color: black;
+  z-index: 5;
+}
+
+.petitzshmetaHead {
+  position: absolute;
+  height: 35px;
+  margin-top: -20px;
+  margin-left: 15px;
+  width: 40px;
+  top: -20px;
+  background-color: black;
+  color: black;
+  z-index: 3
+}
+
+.petitzshmetaBald {
+  background-color: #e0ac69;
+  position: absolute;
+  z-index: 3;
+  width: 15px;
+  left: 13px;
+  height: 13px;
+  border: 1px;
+}
+
+.petitzshmetaNeck {
+  background-color: #e0ac69;
+  position: absolute;
+  width: 25px;
+  top: -10px;
+  left: 23px;
+  height: 10px;
+  border: 1px;
+  z-index: 1;
+}
+
+/* Arms */
+
+.petitzshmetaArmRT {
+  background-color: black;
+  position: absolute;
+  width: 30px;
+  top: 0;
+  left: -20px;
+  color: white;
+  height: 35px;
+  z-index: 3;
+}
+
+.petitzshmetaArmRL {
+  background-color: #e0ac69;
+  position: absolute;
+  width: 20px;
+  top: 20px;
+  left: -20px;
+  color: white;
+  z-index: 6;
+  height: 35px;
+}
+
+.petitzshmetaArmLT {
+  background-color: black;
+  position: absolute;
+  width: 30px;
+  top: 0;
+  left: 60px;
+  color: white;
+  z-index: 3;
+  height: 35px;
+}
+
+.petitzshmetaArmLL {
+  background-color: #e0ac69;
+  position: absolute;
+  width: 20px;
+  top: 20px;
+  left: 70px;
+  color: white;
+  z-index: 3;
+  height: 35px;
+}
+
+
+/* Legs */
+
+.petitzshmetaAss {
+  background-color: gray;
+  position: absolute;
+  width: 60px;
+  top: 60px;
+  z-index: 3;
+  height: 10px;
+  left: 10px;
+
+}
+
+.petitzshmetaLegRT {
+  background-color: gray;
+  position: absolute;
+  width: 30px;
+  top: 60px;
+  left: 0;
+  color: white;
+  z-index: 3;
+  height: 25px;
+}
+
+.petitzshmetaLegRL {
+  background-color: #e0ac69;
+  position: absolute;
+  width: 25px;
+  top: 80px;
+  left: 3px;
+  color: white;
+  z-index: 1;
+  height: 25px;
+}
+
+.petitzshmetaLegLT {
+  background-color: gray;
+  position: absolute;
+  width: 30px;
+  top: 60px;
+  left: 40px;
+  color: white;
+  z-index: 3;
+  height: 25px;
+}
+
+.petitzshmetaLegLL {
+  background-color: #e0ac69;
+  position: absolute;
+  width: 25px;
+  top: 80px;
+  left: 43px;
+  color: white;
+  z-index: 1;
+  height: 25px;
+}
+
+/* shoes */
+
+.petitzshmetaShoesR {
+  background-color: black;
+  position: absolute;
+  width: 25px;
+  top: 100px;
+  left: 43px;
+  height: 13px;
+  z-index: 4;
+}
+
+.petitzshmetaShoesL {
+  background-color: black;
+  position: absolute;
+  width: 25px;
+  top: 100px;
+  left: 3px;
+  height: 13px;
+  z-index: 4;
+}
+
+.petitzshmetaShoesRa {
+  background-image: linear-gradient(#0A0A23, rgb(71, 61, 61), black, black);
+  position: absolute;
+  width: 30px;
+  top: 110px;
+  left: 38px;
+  height: 13px;
+  z-index: 4;
+}
+
+.petitzshmetaShoesLa {
+  background-image: linear-gradient(#0A0A23, rgb(71, 61, 61), black, black);
+  position: absolute;
+  width: 35px;
+  top: 110px;
+  left: -7px;
+  height: 13px;
+  z-index: 4;
+}
+
+.petitzshmeta {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 80vh;
+  right: 7vw;
+}
+
+
+
+/* =============================================== /*
+/*                     Trash                       */
+.trash {
+  position: absolute;
+  bottom: 9px;
+  margin-left: 23px;
+  z-index: 2;
+  width: 71px;
+  height: 96px;
+  outline: 1px solid transparent;
+  perspective: 150px;
+  transform: rotate(180deg);
+}
+
+.trash::before {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 120px;
+  background: #fff;
+  transform: rotateX(45deg);
+  left: -1px;
+}
+
+.trash::after {
+  content: '';
+  position: absolute;
+  width: 113px;
+  height: 7px;
+  background: #292929;
+  top: 122px;
+  left: -19px;
+  border-radius: 5px;
+}
+
+/*                     laptop                   */
+
+
+.laptop {
+  z-index: 0;
+  margin-top: -222px;
+  margin-left: 269px;
+  width: 289px;
+  height: 175px;
+  background: #353442;
+  border: 10px solid #030303;
+  border-bottom: 21px solid #030303;
+  border-radius: 5px;
+  position: relative;
+}
+
+.laptop .terminal {
+  background-color: #000;
+  color: #0f0;
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  top: 33px;
+  left: 22%;
+  padding: 10px;
+  font-family: monospace;
+  white-space: pre;
+}
+
+.laptop .terminal::after {
+  content: "Hello World!\A\AThis was made entirely in CSS\A\A But it does not end here\A\A Click and see ...";
+  white-space: pre;
+  /* animation: typing 2s steps(40, end), blink-caret .75s step-end infinite; */
+}
+
+
+.laptop .base {
+  background-color: #444;
+  width: 99%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  top: 110%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+/*
+/*
+/* =============================================== /*
+/*                     Note                        */
+
+.notes {
+  display: flex;
+  justify-content: space-between;
+  width: 170px; 
+  z-index: 2;
+  top:-4px
+}
+
+.note {
+  width: 31px;
+  height: 21px;
+  background: #f9ec3e;
+  border-top: 6px solid #cac222;
+  transform: rotate(12deg);
+  box-shadow: 0 1px 2px;
+  font-size: 11px;
+  text-align: center;
+  padding-top: 7px;
+  z-index: 1;
+}
+
+
